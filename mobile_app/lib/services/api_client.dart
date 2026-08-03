@@ -3,7 +3,7 @@ import 'package:http/http.dart' as http;
 import 'package:shared_preferences/shared_preferences.dart';
 
 class ApiClient {
-  static String get baseUrl => 'https://salescrm.talxone.com/api/mobile/v1';
+  static String get baseUrl => 'https://salescrm-production-5257.up.railway.app/api/mobile/v1';
 
   String? _accessToken;
   String? _refreshToken;
