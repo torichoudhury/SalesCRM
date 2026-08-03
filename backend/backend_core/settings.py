@@ -140,8 +140,6 @@ SIMPLE_JWT = {
 }
 
 # ─── CORS ─────────────────────────────────────────────────────────────────────
-# Set CORS_ALLOWED_ORIGINS_ENV on Railway to a comma-separated list of allowed origins,
-# e.g.: https://your-app.up.railway.app,https://your-frontend.up.railway.app
 _cors_env = os.environ.get('CORS_ALLOWED_ORIGINS', '')
 _cors_defaults = [
     "http://localhost:3000",
@@ -149,9 +147,16 @@ _cors_defaults = [
     "http://127.0.0.1:8000",
     "http://localhost:8080",
 ]
+
+def _clean_origin(o):
+    o = o.strip()
+    if o and not (o.startswith('http://') or o.startswith('https://')):
+        return f"https://{o}"
+    return o
+
 CORS_ALLOW_ALL_ORIGINS = False
 CORS_ALLOWED_ORIGINS = (
-    [origin.strip() for origin in _cors_env.split(',') if origin.strip()]
+    [_clean_origin(origin) for origin in _cors_env.split(',') if origin.strip()]
     if _cors_env
     else _cors_defaults
 )
