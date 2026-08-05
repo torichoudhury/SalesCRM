@@ -73,10 +73,35 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'backend_core.wsgi.application'
 
-# ─── DATABASE (MySQL — matches schema PascalCase table naming) ─────────────────
-_db_engine = os.environ.get('DB_ENGINE', 'django.db.backends.sqlite3')
+# ─── DATABASE (Supports PostgreSQL via DATABASE_URL or DB_ENGINE, MySQL, SQLite) ───
+try:
+    import dj_database_url
+except ImportError:
+    dj_database_url = None
 
-if _db_engine == 'django.db.backends.mysql':
+_db_url = os.environ.get('DATABASE_URL')
+_db_engine = os.environ.get('DB_ENGINE', '')
+
+if _db_url and dj_database_url:
+    DATABASES = {
+        'default': dj_database_url.config(
+            default=_db_url,
+            conn_max_age=600,
+            conn_health_checks=True,
+        )
+    }
+elif _db_engine == 'django.db.backends.postgresql':
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.postgresql',
+            'NAME': os.environ.get('DB_NAME', 'talxone_crm'),
+            'USER': os.environ.get('DB_USER', 'postgres'),
+            'PASSWORD': os.environ.get('DB_PASSWORD', ''),
+            'HOST': os.environ.get('DB_HOST', 'localhost'),
+            'PORT': os.environ.get('DB_PORT', '5432'),
+        }
+    }
+elif _db_engine == 'django.db.backends.mysql':
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.mysql',
@@ -92,7 +117,7 @@ if _db_engine == 'django.db.backends.mysql':
         }
     }
 else:
-    # SQLite fallback for quick local dev without MySQL installed
+    # SQLite fallback for quick local dev
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.sqlite3',

@@ -1,0 +1,2380 @@
+[
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$600000$XgGGxbRt4StzVaag0fP2WQ$xQZqs3KlRWfeuPkd1m/xdV/xD73x9xV8na+3oA848bs=",
+    "last_login": "2026-07-10T10:10:43.391Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2026-07-09T08:28:32.713Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$600000$ccXqObq1b8HTdjV0XYN0UB$r9gN/SMUHBxRv4IXMbMqUrMQ4xL68hTfVOtwvR2aZRs=",
+    "last_login": null,
+    "is_superuser": true,
+    "username": "tmp_user2",
+    "first_name": "",
+    "last_name": "",
+    "email": "p",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2026-07-20T08:20:27.667Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "ai_test_runner",
+    "first_name": "",
+    "last_name": "",
+    "email": "test@test.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-08-04T10:26:35.988Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "0xxgda31vp9a1g3e9zhtv8i8dlco3fyo",
+  "fields": {
+    "session_data": ".eJxVjMEOwiAQRP-FsyFlqXbx6L3fQBZ2K1VDk9KejP8uJD3oZZKZNzNv5Wnfkt-LrH5mdVVGnX6zQPEpuQF-UL4vOi55W-egW0UftOhxYXndju7fQaKS6loYDBIgWZw6pGqZuY8RBxtdcKYHngxhU7CuA7IXCOIQB6n4HNXnC_sCOD0:1wi1Mg:5SdjNlZS2iAP6vl4skltvtKVVPNT2pNqG98xf574ad0",
+    "expire_date": "2026-07-24T02:53:22.348Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "5g5i1pdnwxq4ssu827duk5zy8lzvmhw7",
+  "fields": {
+    "session_data": ".eJxVjMEOwiAQRP-FsyFlqXbx6L3fQBZ2K1VDk9KejP8uJD3oZZKZNzNv5Wnfkt-LrH5mdVVGnX6zQPEpuQF-UL4vOi55W-egW0UftOhxYXndju7fQaKS6loYDBIgWZw6pGqZuY8RBxtdcKYHngxhU7CuA7IXCOIQB6n4HNXnC_sCOD0:1whkkP:qZy-OpvYK4Onp21MOXCbFNr4XUPvjhDLvA5vdgnFw4k",
+    "expire_date": "2026-07-23T09:08:45.697Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "6flzz9s117by1mq7b7ni6i6e6vouymu5",
+  "fields": {
+    "session_data": ".eJxVjMEOwiAQRP-FsyFlqXbx6L3fQBZ2K1VDk9KejP8uJD3oZZKZNzNv5Wnfkt-LrH5mdVVGnX6zQPEpuQF-UL4vOi55W-egW0UftOhxYXndju7fQaKS6loYDBIgWZw6pGqZuY8RBxtdcKYHngxhU7CuA7IXCOIQB6n4HNXnC_sCOD0:1wi1Hn:cobP6xx74QxA0bhSignGlai4opl_Izf0SlP7Y1TFjaI",
+    "expire_date": "2026-07-24T02:48:19.744Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "8p9k1n9q4n3c0dyoule097bh3yq4vpkd",
+  "fields": {
+    "session_data": ".eJxVjMEOwiAQRP-FsyFlqXbx6L3fQBZ2K1VDk9KejP8uJD3oZZKZNzNv5Wnfkt-LrH5mdVVGnX6zQPEpuQF-UL4vOi55W-egW0UftOhxYXndju7fQaKS6loYDBIgWZw6pGqZuY8RBxtdcKYHngxhU7CuA7IXCOIQB6n4HNXnC_sCOD0:1wi1Va:iZFsQf-c0-LYgsWpf281Nq9VHIC_eniDCU83jY57FzM",
+    "expire_date": "2026-07-24T03:02:34.544Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "ch2cd9yydmz9j99i8ps1imkem8hq7iqx",
+  "fields": {
+    "session_data": ".eJxVjMEOwiAQRP-FsyFlqXbx6L3fQBZ2K1VDk9KejP8uJD3oZZKZNzNv5Wnfkt-LrH5mdVVGnX6zQPEpuQF-UL4vOi55W-egW0UftOhxYXndju7fQaKS6loYDBIgWZw6pGqZuY8RBxtdcKYHngxhU7CuA7IXCOIQB6n4HNXnC_sCOD0:1wi1p0:XUsoC6BFinxMtQEu9o3SLHcmfR4MnStK8Uj6M2_yOhQ",
+    "expire_date": "2026-07-24T03:22:38.674Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "dkyxuvz7sln6762c0qndfs9hjylax2ab",
+  "fields": {
+    "session_data": ".eJxVjMEOwiAQRP-FsyFlqXbx6L3fQBZ2K1VDk9KejP8uJD3oZZKZNzNv5Wnfkt-LrH5mdVVGnX6zQPEpuQF-UL4vOi55W-egW0UftOhxYXndju7fQaKS6loYDBIgWZw6pGqZuY8RBxtdcKYHngxhU7CuA7IXCOIQB6n4HNXnC_sCOD0:1wi1o9:fJGxJyqjvMmr72_MiD4xS9uS-iPkqBqfN61sn4wPXWU",
+    "expire_date": "2026-07-24T03:21:45.986Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "e3be3n01mz1s0b88p1bbg39doetqcetg",
+  "fields": {
+    "session_data": ".eJxVjMEOwiAQRP-FsyFlqXbx6L3fQBZ2K1VDk9KejP8uJD3oZZKZNzNv5Wnfkt-LrH5mdVVGnX6zQPEpuQF-UL4vOi55W-egW0UftOhxYXndju7fQaKS6loYDBIgWZw6pGqZuY8RBxtdcKYHngxhU7CuA7IXCOIQB6n4HNXnC_sCOD0:1wi83E:sxqfJz3dJ263-mRW5q5EZeu-VhXEmxgZ6gf6_OwZcQU",
+    "expire_date": "2026-07-24T10:01:44.242Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "edqm8n1kreky6twhq8f7se3usi1dumus",
+  "fields": {
+    "session_data": ".eJxVjMEOwiAQRP-FsyFlqXbx6L3fQBZ2K1VDk9KejP8uJD3oZZKZNzNv5Wnfkt-LrH5mdVVGnX6zQPEpuQF-UL4vOi55W-egW0UftOhxYXndju7fQaKS6loYDBIgWZw6pGqZuY8RBxtdcKYHngxhU7CuA7IXCOIQB6n4HNXnC_sCOD0:1wi7zh:fDlGF9wmbWeDxGJoD9tAEnysen5OMK_wKpqMEoA4BoE",
+    "expire_date": "2026-07-24T09:58:05.540Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "geet3893lghbrkmjvljr5xrwhkj8hcmr",
+  "fields": {
+    "session_data": ".eJxVjMEOwiAQRP-FsyFlqXbx6L3fQBZ2K1VDk9KejP8uJD3oZZKZNzNv5Wnfkt-LrH5mdVVGnX6zQPEpuQF-UL4vOi55W-egW0UftOhxYXndju7fQaKS6loYDBIgWZw6pGqZuY8RBxtdcKYHngxhU7CuA7IXCOIQB6n4HNXnC_sCOD0:1wi88W:VzoXGOO8Z21e1N60IJP1gVue-h4kUnp7xhN0WLplV8w",
+    "expire_date": "2026-07-24T10:07:12.320Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "h5ys5g3h67fzpzvq3uzl83r9btp9qjzo",
+  "fields": {
+    "session_data": ".eJxVjMEOwiAQRP-FsyFlqXbx6L3fQBZ2K1VDk9KejP8uJD3oZZKZNzNv5Wnfkt-LrH5mdVVGnX6zQPEpuQF-UL4vOi55W-egW0UftOhxYXndju7fQaKS6loYDBIgWZw6pGqZuY8RBxtdcKYHngxhU7CuA7IXCOIQB6n4HNXnC_sCOD0:1whkjw:9tihFON81VxnJh_rlXgigTRkTFEOcnnd22ziXH411sg",
+    "expire_date": "2026-07-23T09:08:16.437Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "khrq9x6nhaqu1ycr61j3yow6rznabmph",
+  "fields": {
+    "session_data": ".eJxVjMEOwiAQRP-FsyFlqXbx6L3fQBZ2K1VDk9KejP8uJD3oZZKZNzNv5Wnfkt-LrH5mdVVGnX6zQPEpuQF-UL4vOi55W-egW0UftOhxYXndju7fQaKS6loYDBIgWZw6pGqZuY8RBxtdcKYHngxhU7CuA7IXCOIQB6n4HNXnC_sCOD0:1wi7yI:ZNBG9aCSgjIaCRPlPnWmzpvMrcTYVe3g5_Z_u2ylYZE",
+    "expire_date": "2026-07-24T09:56:38.040Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "l7lfvemy78omn1ggno5h63mq238zs8ui",
+  "fields": {
+    "session_data": ".eJxVjMEOwiAQRP-FsyFlqXbx6L3fQBZ2K1VDk9KejP8uJD3oZZKZNzNv5Wnfkt-LrH5mdVVGnX6zQPEpuQF-UL4vOi55W-egW0UftOhxYXndju7fQaKS6loYDBIgWZw6pGqZuY8RBxtdcKYHngxhU7CuA7IXCOIQB6n4HNXnC_sCOD0:1whkjT:_apjmBVSZFJ34tio5KqBpb2iYwwPuyxb6EwfiBB6tFM",
+    "expire_date": "2026-07-23T09:07:47.093Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "mvs450lr9vq809g4cnm3cm8rhyqk48qa",
+  "fields": {
+    "session_data": ".eJxVjMEOwiAQRP-FsyFlqXbx6L3fQBZ2K1VDk9KejP8uJD3oZZKZNzNv5Wnfkt-LrH5mdVVGnX6zQPEpuQF-UL4vOi55W-egW0UftOhxYXndju7fQaKS6loYDBIgWZw6pGqZuY8RBxtdcKYHngxhU7CuA7IXCOIQB6n4HNXnC_sCOD0:1wi1bw:2Lcl9bx4I0y9btE7EXBAMs42gyBCjYMH0W8SdHNrr5o",
+    "expire_date": "2026-07-24T03:09:08.486Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "ngpnka6tmwnghiarc3eqr08rvrx87atk",
+  "fields": {
+    "session_data": ".eJxVjMEOwiAQRP-FsyFlqXbx6L3fQBZ2K1VDk9KejP8uJD3oZZKZNzNv5Wnfkt-LrH5mdVVGnX6zQPEpuQF-UL4vOi55W-egW0UftOhxYXndju7fQaKS6loYDBIgWZw6pGqZuY8RBxtdcKYHngxhU7CuA7IXCOIQB6n4HNXnC_sCOD0:1wi1dj:4X-L0onDxfk4JRJ-qovqsBBplU7vrScNOCreqKEcEnc",
+    "expire_date": "2026-07-24T03:10:59.938Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "o7dt1rjuwr6bn1oulsog8thk1i2olqws",
+  "fields": {
+    "session_data": ".eJxVjMEOwiAQRP-FsyFlqXbx6L3fQBZ2K1VDk9KejP8uJD3oZZKZNzNv5Wnfkt-LrH5mdVVGnX6zQPEpuQF-UL4vOi55W-egW0UftOhxYXndju7fQaKS6loYDBIgWZw6pGqZuY8RBxtdcKYHngxhU7CuA7IXCOIQB6n4HNXnC_sCOD0:1wi85P:Qh4dH46uv74Uiecau5I7pd5slyNdJSsm7FSEAHwH_rQ",
+    "expire_date": "2026-07-24T10:03:59.560Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "sl46u2z3820erab9dcc8olqt4wrn8has",
+  "fields": {
+    "session_data": ".eJxVjMEOwiAQRP-FsyFlqXbx6L3fQBZ2K1VDk9KejP8uJD3oZZKZNzNv5Wnfkt-LrH5mdVVGnX6zQPEpuQF-UL4vOi55W-egW0UftOhxYXndju7fQaKS6loYDBIgWZw6pGqZuY8RBxtdcKYHngxhU7CuA7IXCOIQB6n4HNXnC_sCOD0:1whkit:2LrTrkMB_8mlUzokUr8OqPC40I_7D_APuw5TxWRIBpQ",
+    "expire_date": "2026-07-23T09:07:11.587Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "uf16f4lt3d2vvxp3tul9tohnr031m7ow",
+  "fields": {
+    "session_data": ".eJxVjMEOwiAQRP-FsyFlqXbx6L3fQBZ2K1VDk9KejP8uJD3oZZKZNzNv5Wnfkt-LrH5mdVVGnX6zQPEpuQF-UL4vOi55W-egW0UftOhxYXndju7fQaKS6loYDBIgWZw6pGqZuY8RBxtdcKYHngxhU7CuA7IXCOIQB6n4HNXnC_sCOD0:1wi1bp:9X_DbG7HwclQwy_ksnjkA2a98TUcANtitTJDZsNMcjA",
+    "expire_date": "2026-07-24T03:09:01.306Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "vhgmnyfkikgqnu0bi7gnpil28iii3elh",
+  "fields": {
+    "session_data": ".eJxVjMEOwiAQRP-FsyFlqXbx6L3fQBZ2K1VDk9KejP8uJD3oZZKZNzNv5Wnfkt-LrH5mdVVGnX6zQPEpuQF-UL4vOi55W-egW0UftOhxYXndju7fQaKS6loYDBIgWZw6pGqZuY8RBxtdcKYHngxhU7CuA7IXCOIQB6n4HNXnC_sCOD0:1wi89e:fEZLyHiyEVAx5dXSiLVGRC05t3_bP3O1z4Jdld1-7JQ",
+    "expire_date": "2026-07-24T10:08:22.252Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "wsog11korns9o1u4k7qpzweb572jvxmy",
+  "fields": {
+    "session_data": ".eJxVjMEOwiAQRP-FsyFlqXbx6L3fQBZ2K1VDk9KejP8uJD3oZZKZNzNv5Wnfkt-LrH5mdVVGnX6zQPEpuQF-UL4vOi55W-egW0UftOhxYXndju7fQaKS6loYDBIgWZw6pGqZuY8RBxtdcKYHngxhU7CuA7IXCOIQB6n4HNXnC_sCOD0:1wi8Bv:2_reOU6re2csiVAW3LrAuOuz9Azb07_OQxcDvmGofck",
+    "expire_date": "2026-07-24T10:10:43.397Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "zotay10uehoytgqif7ho5vt9gqkvlyrc",
+  "fields": {
+    "session_data": ".eJxVjMEOwiAQRP-FsyFlqXbx6L3fQBZ2K1VDk9KejP8uJD3oZZKZNzNv5Wnfkt-LrH5mdVVGnX6zQPEpuQF-UL4vOi55W-egW0UftOhxYXndju7fQaKS6loYDBIgWZw6pGqZuY8RBxtdcKYHngxhU7CuA7IXCOIQB6n4HNXnC_sCOD0:1whkhz:K_Xc89wnyBvoAsYN6YbVRfOA5Q1lvm2DjB1ZcgUfCCU",
+    "expire_date": "2026-07-23T09:06:15.026Z"
+  }
+},
+{
+  "model": "crm.customer",
+  "pk": 20,
+  "fields": {
+    "name": "Acme Corp",
+    "type": "Company",
+    "email": "billing@acmecorp.com",
+    "phone": "555-0100",
+    "address": "123 Industrial Way",
+    "city": "Kuala Lumpur",
+    "state": "WP",
+    "country": "Malaysia",
+    "zipcode": "50000",
+    "payment_terms": "Net 30",
+    "tax_id": "TAX-1234",
+    "created_at": "2026-07-15T09:13:29.390Z"
+  }
+},
+{
+  "model": "crm.customer",
+  "pk": 21,
+  "fields": {
+    "name": "Jane Doe",
+    "type": "Individual",
+    "email": "jane.doe@example.com",
+    "phone": "555-0199",
+    "address": "456 Residential St",
+    "city": "Petaling Jaya",
+    "state": "Selangor",
+    "country": "Malaysia",
+    "zipcode": null,
+    "payment_terms": "Immediate",
+    "tax_id": null,
+    "created_at": "2026-07-15T09:13:29.392Z"
+  }
+},
+{
+  "model": "crm.customer",
+  "pk": 22,
+  "fields": {
+    "name": "TechLogix Solutions",
+    "type": "Company",
+    "email": "accounts@techlogix.my",
+    "phone": "555-0200",
+    "address": "Level 20, Cyber Tower",
+    "city": "Cyberjaya",
+    "state": "Selangor",
+    "country": "Malaysia",
+    "zipcode": null,
+    "payment_terms": "Net 60",
+    "tax_id": null,
+    "created_at": "2026-07-15T09:13:29.394Z"
+  }
+},
+{
+  "model": "crm.customer",
+  "pk": 23,
+  "fields": {
+    "name": "C",
+    "type": "Company",
+    "email": null,
+    "phone": null,
+    "address": null,
+    "city": null,
+    "state": null,
+    "country": "Malaysia",
+    "zipcode": null,
+    "payment_terms": null,
+    "tax_id": null,
+    "created_at": "2026-07-20T08:20:27.639Z"
+  }
+},
+{
+  "model": "crm.contact",
+  "pk": 22,
+  "fields": {
+    "customer": 20,
+    "first_name": "John",
+    "last_name": "Smith",
+    "email": "jsmith@acmecorp.com",
+    "phone": "555-0101",
+    "designation": "Management",
+    "address": null,
+    "city": null,
+    "state": null,
+    "country": "Malaysia",
+    "zipcode": null,
+    "created_at": "2026-07-15T09:13:29.396Z"
+  }
+},
+{
+  "model": "crm.contact",
+  "pk": 23,
+  "fields": {
+    "customer": 20,
+    "first_name": "Alice",
+    "last_name": "burn",
+    "email": "awong@acmecorp.com",
+    "phone": "555-0102",
+    "designation": "Finance",
+    "address": "",
+    "city": "",
+    "state": "",
+    "country": "Malaysia",
+    "zipcode": "",
+    "created_at": "2026-07-15T09:13:29.398Z"
+  }
+},
+{
+  "model": "crm.contact",
+  "pk": 24,
+  "fields": {
+    "customer": 22,
+    "first_name": "David",
+    "last_name": "Lee",
+    "email": "david.lee@techlogix.my",
+    "phone": "555-0201",
+    "designation": "Operations",
+    "address": null,
+    "city": null,
+    "state": null,
+    "country": "Malaysia",
+    "zipcode": null,
+    "created_at": "2026-07-15T09:13:29.400Z"
+  }
+},
+{
+  "model": "crm.contact",
+  "pk": 25,
+  "fields": {
+    "customer": 20,
+    "first_name": "Al",
+    "last_name": "Wong",
+    "email": "alice.w@acme.com",
+    "phone": "+1-800-555-1234",
+    "designation": "Main",
+    "address": "",
+    "city": "",
+    "state": "",
+    "country": "Malaysia",
+    "zipcode": "",
+    "created_at": "2026-07-15T12:33:33.554Z"
+  }
+},
+{
+  "model": "crm.contact",
+  "pk": 26,
+  "fields": {
+    "customer": 20,
+    "first_name": "A",
+    "last_name": "Wo",
+    "email": "alice.w@acme.com",
+    "phone": "+1-800-555-1234",
+    "designation": "Main",
+    "address": "",
+    "city": "",
+    "state": "",
+    "country": "Malaysia",
+    "zipcode": "",
+    "created_at": "2026-07-15T12:45:58.141Z"
+  }
+},
+{
+  "model": "crm.contact",
+  "pk": 27,
+  "fields": {
+    "customer": 20,
+    "first_name": "Alice",
+    "last_name": "Wong",
+    "email": "alice.w@acme.com",
+    "phone": "+1-800-555-1234",
+    "designation": "Main",
+    "address": "",
+    "city": "",
+    "state": "",
+    "country": "Malaysia",
+    "zipcode": "",
+    "created_at": "2026-07-15T12:52:47.549Z"
+  }
+},
+{
+  "model": "crm.opportunity",
+  "pk": 62,
+  "fields": {
+    "number": "OP-CRM-00062",
+    "title": "ERP System Implementation",
+    "customer": 20,
+    "contact": 22,
+    "expected_revenue": "150000.00",
+    "expected_cost": "0.00",
+    "stage": "Negotiation",
+    "priority": "High",
+    "category": "New Business",
+    "referral_source": null,
+    "sales_rep": "Swayam",
+    "tags": null,
+    "remark": null,
+    "expected_closing_date": "2026-07-30",
+    "win_prediction": 75,
+    "created_at": "2026-07-15T09:13:29.402Z"
+  }
+},
+{
+  "model": "crm.opportunity",
+  "pk": 63,
+  "fields": {
+    "number": "OP-CRM-00063",
+    "title": "Annual Maintenance Contract",
+    "customer": 20,
+    "contact": 23,
+    "expected_revenue": "25000.00",
+    "expected_cost": "0.00",
+    "stage": "Negotiation",
+    "priority": "Medium",
+    "category": "Existing Business",
+    "referral_source": null,
+    "sales_rep": "Swayam",
+    "tags": null,
+    "remark": null,
+    "expected_closing_date": null,
+    "win_prediction": 50,
+    "created_at": "2026-07-15T09:13:29.407Z"
+  }
+},
+{
+  "model": "crm.opportunity",
+  "pk": 64,
+  "fields": {
+    "number": "OP-CRM-00064",
+    "title": "Hardware Upgrade - 50 Laptops",
+    "customer": 22,
+    "contact": 24,
+    "expected_revenue": "180000.00",
+    "expected_cost": "0.00",
+    "stage": "Won",
+    "priority": "High",
+    "category": "Upsell",
+    "referral_source": null,
+    "sales_rep": "Swayam",
+    "tags": null,
+    "remark": null,
+    "expected_closing_date": null,
+    "win_prediction": 100,
+    "created_at": "2026-07-15T09:13:29.411Z"
+  }
+},
+{
+  "model": "crm.opportunity",
+  "pk": 65,
+  "fields": {
+    "number": "OP-CRM-00065",
+    "title": "Consulting Retainer",
+    "customer": 21,
+    "contact": null,
+    "expected_revenue": "12000.00",
+    "expected_cost": "0.00",
+    "stage": "New",
+    "priority": "Low",
+    "category": "New Business",
+    "referral_source": null,
+    "sales_rep": "Alex",
+    "tags": null,
+    "remark": null,
+    "expected_closing_date": null,
+    "win_prediction": 20,
+    "created_at": "2026-07-15T09:13:29.417Z"
+  }
+},
+{
+  "model": "crm.opportunity",
+  "pk": 66,
+  "fields": {
+    "number": "OP-CRM-00066",
+    "title": "Cloud Migration Project",
+    "customer": 22,
+    "contact": null,
+    "expected_revenue": "45000.00",
+    "expected_cost": "0.00",
+    "stage": "New",
+    "priority": "Medium",
+    "category": "New Business",
+    "referral_source": null,
+    "sales_rep": "Alex",
+    "tags": null,
+    "remark": null,
+    "expected_closing_date": null,
+    "win_prediction": 40,
+    "created_at": "2026-07-15T09:13:29.425Z"
+  }
+},
+{
+  "model": "crm.opportunity",
+  "pk": 67,
+  "fields": {
+    "number": "OP-CRM-00067",
+    "title": "Security Audit 2026",
+    "customer": 20,
+    "contact": null,
+    "expected_revenue": "8500.00",
+    "expected_cost": "0.00",
+    "stage": "Qualified",
+    "priority": "Low",
+    "category": "Existing Business",
+    "referral_source": null,
+    "sales_rep": "Swayam",
+    "tags": null,
+    "remark": null,
+    "expected_closing_date": null,
+    "win_prediction": 30,
+    "created_at": "2026-07-15T09:13:29.430Z"
+  }
+},
+{
+  "model": "crm.opportunity",
+  "pk": 68,
+  "fields": {
+    "number": "OP-CRM-00068",
+    "title": "Server Rack Expansion",
+    "customer": 22,
+    "contact": null,
+    "expected_revenue": "65000.00",
+    "expected_cost": "0.00",
+    "stage": "Negotiation",
+    "priority": "High",
+    "category": "Upsell",
+    "referral_source": null,
+    "sales_rep": "Alex",
+    "tags": null,
+    "remark": null,
+    "expected_closing_date": null,
+    "win_prediction": 80,
+    "created_at": "2026-07-15T09:13:29.435Z"
+  }
+},
+{
+  "model": "crm.opportunity",
+  "pk": 69,
+  "fields": {
+    "number": "OP-CRM-00069",
+    "title": "Lost Deal - Old Software",
+    "customer": 21,
+    "contact": null,
+    "expected_revenue": "5000.00",
+    "expected_cost": "0.00",
+    "stage": "Lost",
+    "priority": "Low",
+    "category": "Other",
+    "referral_source": null,
+    "sales_rep": "Swayam",
+    "tags": null,
+    "remark": null,
+    "expected_closing_date": null,
+    "win_prediction": 0,
+    "created_at": "2026-07-15T09:13:29.439Z"
+  }
+},
+{
+  "model": "crm.opportunity",
+  "pk": 70,
+  "fields": {
+    "number": "OP-CRM-00070",
+    "title": "Q1 License Renewals",
+    "customer": 20,
+    "contact": null,
+    "expected_revenue": "18000.00",
+    "expected_cost": "0.00",
+    "stage": "Closed",
+    "priority": "High",
+    "category": "Renewal",
+    "referral_source": null,
+    "sales_rep": "Alex",
+    "tags": null,
+    "remark": null,
+    "expected_closing_date": null,
+    "win_prediction": 100,
+    "created_at": "2026-07-15T09:13:29.443Z"
+  }
+},
+{
+  "model": "crm.opportunity",
+  "pk": 71,
+  "fields": {
+    "number": "OP-CRM-00071",
+    "title": "Website Redesign",
+    "customer": 21,
+    "contact": null,
+    "expected_revenue": "22000.00",
+    "expected_cost": "0.00",
+    "stage": "New",
+    "priority": "Medium",
+    "category": "New Business",
+    "referral_source": null,
+    "sales_rep": "Swayam",
+    "tags": null,
+    "remark": null,
+    "expected_closing_date": null,
+    "win_prediction": 25,
+    "created_at": "2026-07-15T09:13:29.447Z"
+  }
+},
+{
+  "model": "crm.opportunity",
+  "pk": 72,
+  "fields": {
+    "number": "OP-CRM-00072",
+    "title": "video",
+    "customer": 21,
+    "contact": null,
+    "expected_revenue": "3000.00",
+    "expected_cost": "0.00",
+    "stage": "Qualified",
+    "priority": "Medium",
+    "category": "New Business",
+    "referral_source": "Referral",
+    "sales_rep": null,
+    "tags": null,
+    "remark": null,
+    "expected_closing_date": "2026-08-14",
+    "win_prediction": 65,
+    "created_at": "2026-07-15T11:17:48.122Z"
+  }
+},
+{
+  "model": "crm.opportunity",
+  "pk": 73,
+  "fields": {
+    "number": "OP-CRM-00073",
+    "title": "O",
+    "customer": 23,
+    "contact": null,
+    "expected_revenue": "0.00",
+    "expected_cost": "0.00",
+    "stage": "New",
+    "priority": "Medium",
+    "category": null,
+    "referral_source": null,
+    "sales_rep": null,
+    "tags": null,
+    "remark": null,
+    "expected_closing_date": null,
+    "win_prediction": 0,
+    "created_at": "2026-07-20T08:20:27.644Z"
+  }
+},
+{
+  "model": "crm.quote",
+  "pk": 12,
+  "fields": {
+    "number": "QT-CRM-00012",
+    "opportunity": 64,
+    "customer": 22,
+    "contact": 24,
+    "status": "Approved",
+    "subtotal": "11520000.00",
+    "tax": "0.00",
+    "discount": "0.00",
+    "charges": "0.00",
+    "total": "11520000.00",
+    "remark": "Hardware as per specs",
+    "created_at": "2026-07-15T09:13:29.466Z"
+  }
+},
+{
+  "model": "crm.quote",
+  "pk": 14,
+  "fields": {
+    "number": "QT-CRM-00014",
+    "opportunity": null,
+    "customer": 20,
+    "contact": null,
+    "status": "Approved",
+    "subtotal": "0.00",
+    "tax": "0.00",
+    "discount": "0.00",
+    "charges": "0.00",
+    "total": "0.00",
+    "remark": null,
+    "created_at": "2026-07-15T12:13:13.391Z"
+  }
+},
+{
+  "model": "crm.quote",
+  "pk": 15,
+  "fields": {
+    "number": "QT-CRM-00015",
+    "opportunity": null,
+    "customer": 20,
+    "contact": null,
+    "status": "Approved",
+    "subtotal": "120.00",
+    "tax": "2.40",
+    "discount": "0.00",
+    "charges": "0.00",
+    "total": "122.40",
+    "remark": null,
+    "created_at": "2026-07-15T12:50:57.901Z"
+  }
+},
+{
+  "model": "crm.quote",
+  "pk": 16,
+  "fields": {
+    "number": "QT-CRM-00016",
+    "opportunity": null,
+    "customer": 20,
+    "contact": null,
+    "status": "Approved",
+    "subtotal": "720.00",
+    "tax": "129.60",
+    "discount": "0.00",
+    "charges": "0.00",
+    "total": "849.60",
+    "remark": null,
+    "created_at": "2026-07-15T12:54:22.589Z"
+  }
+},
+{
+  "model": "crm.quote",
+  "pk": 17,
+  "fields": {
+    "number": "QT-CRM-00017",
+    "opportunity": null,
+    "customer": 22,
+    "contact": null,
+    "status": "Approved",
+    "subtotal": "0.00",
+    "tax": "0.00",
+    "discount": "0.00",
+    "charges": "0.00",
+    "total": "0.00",
+    "remark": null,
+    "created_at": "2026-07-15T13:04:51.400Z"
+  }
+},
+{
+  "model": "crm.quote",
+  "pk": 18,
+  "fields": {
+    "number": "QT-CRM-00018",
+    "opportunity": 73,
+    "customer": 23,
+    "contact": null,
+    "status": "Approved",
+    "subtotal": "0.00",
+    "tax": "0.00",
+    "discount": "0.00",
+    "charges": "0.00",
+    "total": "9000.00",
+    "remark": null,
+    "created_at": "2026-07-20T08:20:27.650Z"
+  }
+},
+{
+  "model": "crm.quotelineitem",
+  "pk": 14,
+  "fields": {
+    "quote": 12,
+    "product": "ThinkPad T14",
+    "description": "i7, 16GB RAM, 512GB SSD",
+    "unit_price": "3600.00",
+    "pax": 50,
+    "discount": "0.00",
+    "tax": "0.00",
+    "total": "180000.00"
+  }
+},
+{
+  "model": "crm.quotelineitem",
+  "pk": 17,
+  "fields": {
+    "quote": 12,
+    "product": "ThinkPad T14",
+    "description": "i7, 16GB RAM, 512GB SSD",
+    "unit_price": "3600.00",
+    "pax": 50,
+    "discount": "0.00",
+    "tax": "0.00",
+    "total": "180000.00"
+  }
+},
+{
+  "model": "crm.quotelineitem",
+  "pk": 30,
+  "fields": {
+    "quote": 12,
+    "product": "ThinkPad T14",
+    "description": "i7, 16GB RAM, 512GB SSD",
+    "unit_price": "3600.00",
+    "pax": 50,
+    "discount": "0.00",
+    "tax": "0.00",
+    "total": "180000.00"
+  }
+},
+{
+  "model": "crm.quotelineitem",
+  "pk": 31,
+  "fields": {
+    "quote": 12,
+    "product": "ThinkPad T14",
+    "description": "i7, 16GB RAM, 512GB SSD",
+    "unit_price": "3600.00",
+    "pax": 50,
+    "discount": "0.00",
+    "tax": "0.00",
+    "total": "180000.00"
+  }
+},
+{
+  "model": "crm.quotelineitem",
+  "pk": 32,
+  "fields": {
+    "quote": 12,
+    "product": "ThinkPad T14",
+    "description": "i7, 16GB RAM, 512GB SSD",
+    "unit_price": "3600.00",
+    "pax": 50,
+    "discount": "0.00",
+    "tax": "0.00",
+    "total": "180000.00"
+  }
+},
+{
+  "model": "crm.quotelineitem",
+  "pk": 33,
+  "fields": {
+    "quote": 12,
+    "product": "ThinkPad T14",
+    "description": "i7, 16GB RAM, 512GB SSD",
+    "unit_price": "3600.00",
+    "pax": 50,
+    "discount": "0.00",
+    "tax": "0.00",
+    "total": "180000.00"
+  }
+},
+{
+  "model": "crm.quotelineitem",
+  "pk": 34,
+  "fields": {
+    "quote": 12,
+    "product": "ThinkPad T14",
+    "description": "i7, 16GB RAM, 512GB SSD",
+    "unit_price": "3600.00",
+    "pax": 50,
+    "discount": "0.00",
+    "tax": "0.00",
+    "total": "180000.00"
+  }
+},
+{
+  "model": "crm.quotelineitem",
+  "pk": 35,
+  "fields": {
+    "quote": 12,
+    "product": "ThinkPad T14",
+    "description": "i7, 16GB RAM, 512GB SSD",
+    "unit_price": "3600.00",
+    "pax": 50,
+    "discount": "0.00",
+    "tax": "0.00",
+    "total": "180000.00"
+  }
+},
+{
+  "model": "crm.quotelineitem",
+  "pk": 36,
+  "fields": {
+    "quote": 12,
+    "product": "ThinkPad T14",
+    "description": "i7, 16GB RAM, 512GB SSD",
+    "unit_price": "3600.00",
+    "pax": 50,
+    "discount": "0.00",
+    "tax": "0.00",
+    "total": "180000.00"
+  }
+},
+{
+  "model": "crm.quotelineitem",
+  "pk": 37,
+  "fields": {
+    "quote": 12,
+    "product": "ThinkPad T14",
+    "description": "i7, 16GB RAM, 512GB SSD",
+    "unit_price": "3600.00",
+    "pax": 50,
+    "discount": "0.00",
+    "tax": "0.00",
+    "total": "180000.00"
+  }
+},
+{
+  "model": "crm.quotelineitem",
+  "pk": 38,
+  "fields": {
+    "quote": 12,
+    "product": "ThinkPad T14",
+    "description": "i7, 16GB RAM, 512GB SSD",
+    "unit_price": "3600.00",
+    "pax": 50,
+    "discount": "0.00",
+    "tax": "0.00",
+    "total": "180000.00"
+  }
+},
+{
+  "model": "crm.quotelineitem",
+  "pk": 39,
+  "fields": {
+    "quote": 12,
+    "product": "ThinkPad T14",
+    "description": "i7, 16GB RAM, 512GB SSD",
+    "unit_price": "3600.00",
+    "pax": 50,
+    "discount": "0.00",
+    "tax": "0.00",
+    "total": "180000.00"
+  }
+},
+{
+  "model": "crm.quotelineitem",
+  "pk": 40,
+  "fields": {
+    "quote": 12,
+    "product": "ThinkPad T14",
+    "description": "i7, 16GB RAM, 512GB SSD",
+    "unit_price": "3600.00",
+    "pax": 50,
+    "discount": "0.00",
+    "tax": "0.00",
+    "total": "180000.00"
+  }
+},
+{
+  "model": "crm.quotelineitem",
+  "pk": 41,
+  "fields": {
+    "quote": 12,
+    "product": "ThinkPad T14",
+    "description": "i7, 16GB RAM, 512GB SSD",
+    "unit_price": "3600.00",
+    "pax": 50,
+    "discount": "0.00",
+    "tax": "0.00",
+    "total": "180000.00"
+  }
+},
+{
+  "model": "crm.quotelineitem",
+  "pk": 42,
+  "fields": {
+    "quote": 12,
+    "product": "ThinkPad T14",
+    "description": "i7, 16GB RAM, 512GB SSD",
+    "unit_price": "3600.00",
+    "pax": 50,
+    "discount": "0.00",
+    "tax": "0.00",
+    "total": "180000.00"
+  }
+},
+{
+  "model": "crm.quotelineitem",
+  "pk": 43,
+  "fields": {
+    "quote": 12,
+    "product": "ThinkPad T14",
+    "description": "i7, 16GB RAM, 512GB SSD",
+    "unit_price": "3600.00",
+    "pax": 50,
+    "discount": "0.00",
+    "tax": "0.00",
+    "total": "180000.00"
+  }
+},
+{
+  "model": "crm.quotelineitem",
+  "pk": 60,
+  "fields": {
+    "quote": 12,
+    "product": "ThinkPad T14",
+    "description": "i7, 16GB RAM, 512GB SSD",
+    "unit_price": "3600.00",
+    "pax": 50,
+    "discount": "0.00",
+    "tax": "0.00",
+    "total": "180000.00"
+  }
+},
+{
+  "model": "crm.quotelineitem",
+  "pk": 61,
+  "fields": {
+    "quote": 12,
+    "product": "ThinkPad T14",
+    "description": "i7, 16GB RAM, 512GB SSD",
+    "unit_price": "3600.00",
+    "pax": 50,
+    "discount": "0.00",
+    "tax": "0.00",
+    "total": "180000.00"
+  }
+},
+{
+  "model": "crm.quotelineitem",
+  "pk": 62,
+  "fields": {
+    "quote": 12,
+    "product": "ThinkPad T14",
+    "description": "i7, 16GB RAM, 512GB SSD",
+    "unit_price": "3600.00",
+    "pax": 50,
+    "discount": "0.00",
+    "tax": "0.00",
+    "total": "180000.00"
+  }
+},
+{
+  "model": "crm.quotelineitem",
+  "pk": 63,
+  "fields": {
+    "quote": 12,
+    "product": "ThinkPad T14",
+    "description": "i7, 16GB RAM, 512GB SSD",
+    "unit_price": "3600.00",
+    "pax": 50,
+    "discount": "0.00",
+    "tax": "0.00",
+    "total": "180000.00"
+  }
+},
+{
+  "model": "crm.quotelineitem",
+  "pk": 64,
+  "fields": {
+    "quote": 12,
+    "product": "ThinkPad T14",
+    "description": "i7, 16GB RAM, 512GB SSD",
+    "unit_price": "3600.00",
+    "pax": 50,
+    "discount": "0.00",
+    "tax": "0.00",
+    "total": "180000.00"
+  }
+},
+{
+  "model": "crm.quotelineitem",
+  "pk": 65,
+  "fields": {
+    "quote": 12,
+    "product": "ThinkPad T14",
+    "description": "i7, 16GB RAM, 512GB SSD",
+    "unit_price": "3600.00",
+    "pax": 50,
+    "discount": "0.00",
+    "tax": "0.00",
+    "total": "180000.00"
+  }
+},
+{
+  "model": "crm.quotelineitem",
+  "pk": 66,
+  "fields": {
+    "quote": 12,
+    "product": "ThinkPad T14",
+    "description": "i7, 16GB RAM, 512GB SSD",
+    "unit_price": "3600.00",
+    "pax": 50,
+    "discount": "0.00",
+    "tax": "0.00",
+    "total": "180000.00"
+  }
+},
+{
+  "model": "crm.quotelineitem",
+  "pk": 67,
+  "fields": {
+    "quote": 12,
+    "product": "ThinkPad T14",
+    "description": "i7, 16GB RAM, 512GB SSD",
+    "unit_price": "3600.00",
+    "pax": 50,
+    "discount": "0.00",
+    "tax": "0.00",
+    "total": "180000.00"
+  }
+},
+{
+  "model": "crm.quotelineitem",
+  "pk": 68,
+  "fields": {
+    "quote": 12,
+    "product": "ThinkPad T14",
+    "description": "i7, 16GB RAM, 512GB SSD",
+    "unit_price": "3600.00",
+    "pax": 50,
+    "discount": "0.00",
+    "tax": "0.00",
+    "total": "180000.00"
+  }
+},
+{
+  "model": "crm.quotelineitem",
+  "pk": 69,
+  "fields": {
+    "quote": 12,
+    "product": "ThinkPad T14",
+    "description": "i7, 16GB RAM, 512GB SSD",
+    "unit_price": "3600.00",
+    "pax": 50,
+    "discount": "0.00",
+    "tax": "0.00",
+    "total": "180000.00"
+  }
+},
+{
+  "model": "crm.quotelineitem",
+  "pk": 70,
+  "fields": {
+    "quote": 12,
+    "product": "ThinkPad T14",
+    "description": "i7, 16GB RAM, 512GB SSD",
+    "unit_price": "3600.00",
+    "pax": 50,
+    "discount": "0.00",
+    "tax": "0.00",
+    "total": "180000.00"
+  }
+},
+{
+  "model": "crm.quotelineitem",
+  "pk": 71,
+  "fields": {
+    "quote": 12,
+    "product": "ThinkPad T14",
+    "description": "i7, 16GB RAM, 512GB SSD",
+    "unit_price": "3600.00",
+    "pax": 50,
+    "discount": "0.00",
+    "tax": "0.00",
+    "total": "180000.00"
+  }
+},
+{
+  "model": "crm.quotelineitem",
+  "pk": 72,
+  "fields": {
+    "quote": 12,
+    "product": "ThinkPad T14",
+    "description": "i7, 16GB RAM, 512GB SSD",
+    "unit_price": "3600.00",
+    "pax": 50,
+    "discount": "0.00",
+    "tax": "0.00",
+    "total": "180000.00"
+  }
+},
+{
+  "model": "crm.quotelineitem",
+  "pk": 73,
+  "fields": {
+    "quote": 12,
+    "product": "ThinkPad T14",
+    "description": "i7, 16GB RAM, 512GB SSD",
+    "unit_price": "3600.00",
+    "pax": 50,
+    "discount": "0.00",
+    "tax": "0.00",
+    "total": "180000.00"
+  }
+},
+{
+  "model": "crm.quotelineitem",
+  "pk": 74,
+  "fields": {
+    "quote": 12,
+    "product": "ThinkPad T14",
+    "description": "i7, 16GB RAM, 512GB SSD",
+    "unit_price": "3600.00",
+    "pax": 50,
+    "discount": "0.00",
+    "tax": "0.00",
+    "total": "180000.00"
+  }
+},
+{
+  "model": "crm.quotelineitem",
+  "pk": 75,
+  "fields": {
+    "quote": 12,
+    "product": "ThinkPad T14",
+    "description": "i7, 16GB RAM, 512GB SSD",
+    "unit_price": "3600.00",
+    "pax": 50,
+    "discount": "0.00",
+    "tax": "0.00",
+    "total": "180000.00"
+  }
+},
+{
+  "model": "crm.quotelineitem",
+  "pk": 174,
+  "fields": {
+    "quote": 12,
+    "product": "ThinkPad T14",
+    "description": "i7, 16GB RAM, 512GB SSD",
+    "unit_price": "3600.00",
+    "pax": 50,
+    "discount": "0.00",
+    "tax": "0.00",
+    "total": "180000.00"
+  }
+},
+{
+  "model": "crm.quotelineitem",
+  "pk": 175,
+  "fields": {
+    "quote": 12,
+    "product": "ThinkPad T14",
+    "description": "i7, 16GB RAM, 512GB SSD",
+    "unit_price": "3600.00",
+    "pax": 50,
+    "discount": "0.00",
+    "tax": "0.00",
+    "total": "180000.00"
+  }
+},
+{
+  "model": "crm.quotelineitem",
+  "pk": 176,
+  "fields": {
+    "quote": 12,
+    "product": "ThinkPad T14",
+    "description": "i7, 16GB RAM, 512GB SSD",
+    "unit_price": "3600.00",
+    "pax": 50,
+    "discount": "0.00",
+    "tax": "0.00",
+    "total": "180000.00"
+  }
+},
+{
+  "model": "crm.quotelineitem",
+  "pk": 177,
+  "fields": {
+    "quote": 12,
+    "product": "ThinkPad T14",
+    "description": "i7, 16GB RAM, 512GB SSD",
+    "unit_price": "3600.00",
+    "pax": 50,
+    "discount": "0.00",
+    "tax": "0.00",
+    "total": "180000.00"
+  }
+},
+{
+  "model": "crm.quotelineitem",
+  "pk": 178,
+  "fields": {
+    "quote": 12,
+    "product": "ThinkPad T14",
+    "description": "i7, 16GB RAM, 512GB SSD",
+    "unit_price": "3600.00",
+    "pax": 50,
+    "discount": "0.00",
+    "tax": "0.00",
+    "total": "180000.00"
+  }
+},
+{
+  "model": "crm.quotelineitem",
+  "pk": 179,
+  "fields": {
+    "quote": 12,
+    "product": "ThinkPad T14",
+    "description": "i7, 16GB RAM, 512GB SSD",
+    "unit_price": "3600.00",
+    "pax": 50,
+    "discount": "0.00",
+    "tax": "0.00",
+    "total": "180000.00"
+  }
+},
+{
+  "model": "crm.quotelineitem",
+  "pk": 180,
+  "fields": {
+    "quote": 12,
+    "product": "ThinkPad T14",
+    "description": "i7, 16GB RAM, 512GB SSD",
+    "unit_price": "3600.00",
+    "pax": 50,
+    "discount": "0.00",
+    "tax": "0.00",
+    "total": "180000.00"
+  }
+},
+{
+  "model": "crm.quotelineitem",
+  "pk": 181,
+  "fields": {
+    "quote": 12,
+    "product": "ThinkPad T14",
+    "description": "i7, 16GB RAM, 512GB SSD",
+    "unit_price": "3600.00",
+    "pax": 50,
+    "discount": "0.00",
+    "tax": "0.00",
+    "total": "180000.00"
+  }
+},
+{
+  "model": "crm.quotelineitem",
+  "pk": 182,
+  "fields": {
+    "quote": 12,
+    "product": "ThinkPad T14",
+    "description": "i7, 16GB RAM, 512GB SSD",
+    "unit_price": "3600.00",
+    "pax": 50,
+    "discount": "0.00",
+    "tax": "0.00",
+    "total": "180000.00"
+  }
+},
+{
+  "model": "crm.quotelineitem",
+  "pk": 183,
+  "fields": {
+    "quote": 12,
+    "product": "ThinkPad T14",
+    "description": "i7, 16GB RAM, 512GB SSD",
+    "unit_price": "3600.00",
+    "pax": 50,
+    "discount": "0.00",
+    "tax": "0.00",
+    "total": "180000.00"
+  }
+},
+{
+  "model": "crm.quotelineitem",
+  "pk": 184,
+  "fields": {
+    "quote": 12,
+    "product": "ThinkPad T14",
+    "description": "i7, 16GB RAM, 512GB SSD",
+    "unit_price": "3600.00",
+    "pax": 50,
+    "discount": "0.00",
+    "tax": "0.00",
+    "total": "180000.00"
+  }
+},
+{
+  "model": "crm.quotelineitem",
+  "pk": 185,
+  "fields": {
+    "quote": 12,
+    "product": "ThinkPad T14",
+    "description": "i7, 16GB RAM, 512GB SSD",
+    "unit_price": "3600.00",
+    "pax": 50,
+    "discount": "0.00",
+    "tax": "0.00",
+    "total": "180000.00"
+  }
+},
+{
+  "model": "crm.quotelineitem",
+  "pk": 186,
+  "fields": {
+    "quote": 12,
+    "product": "ThinkPad T14",
+    "description": "i7, 16GB RAM, 512GB SSD",
+    "unit_price": "3600.00",
+    "pax": 50,
+    "discount": "0.00",
+    "tax": "0.00",
+    "total": "180000.00"
+  }
+},
+{
+  "model": "crm.quotelineitem",
+  "pk": 187,
+  "fields": {
+    "quote": 12,
+    "product": "ThinkPad T14",
+    "description": "i7, 16GB RAM, 512GB SSD",
+    "unit_price": "3600.00",
+    "pax": 50,
+    "discount": "0.00",
+    "tax": "0.00",
+    "total": "180000.00"
+  }
+},
+{
+  "model": "crm.quotelineitem",
+  "pk": 188,
+  "fields": {
+    "quote": 12,
+    "product": "ThinkPad T14",
+    "description": "i7, 16GB RAM, 512GB SSD",
+    "unit_price": "3600.00",
+    "pax": 50,
+    "discount": "0.00",
+    "tax": "0.00",
+    "total": "180000.00"
+  }
+},
+{
+  "model": "crm.quotelineitem",
+  "pk": 189,
+  "fields": {
+    "quote": 12,
+    "product": "ThinkPad T14",
+    "description": "i7, 16GB RAM, 512GB SSD",
+    "unit_price": "3600.00",
+    "pax": 50,
+    "discount": "0.00",
+    "tax": "0.00",
+    "total": "180000.00"
+  }
+},
+{
+  "model": "crm.quotelineitem",
+  "pk": 190,
+  "fields": {
+    "quote": 12,
+    "product": "ThinkPad T14",
+    "description": "i7, 16GB RAM, 512GB SSD",
+    "unit_price": "3600.00",
+    "pax": 50,
+    "discount": "0.00",
+    "tax": "0.00",
+    "total": "180000.00"
+  }
+},
+{
+  "model": "crm.quotelineitem",
+  "pk": 191,
+  "fields": {
+    "quote": 12,
+    "product": "ThinkPad T14",
+    "description": "i7, 16GB RAM, 512GB SSD",
+    "unit_price": "3600.00",
+    "pax": 50,
+    "discount": "0.00",
+    "tax": "0.00",
+    "total": "180000.00"
+  }
+},
+{
+  "model": "crm.quotelineitem",
+  "pk": 192,
+  "fields": {
+    "quote": 12,
+    "product": "ThinkPad T14",
+    "description": "i7, 16GB RAM, 512GB SSD",
+    "unit_price": "3600.00",
+    "pax": 50,
+    "discount": "0.00",
+    "tax": "0.00",
+    "total": "180000.00"
+  }
+},
+{
+  "model": "crm.quotelineitem",
+  "pk": 193,
+  "fields": {
+    "quote": 12,
+    "product": "ThinkPad T14",
+    "description": "i7, 16GB RAM, 512GB SSD",
+    "unit_price": "3600.00",
+    "pax": 50,
+    "discount": "0.00",
+    "tax": "0.00",
+    "total": "180000.00"
+  }
+},
+{
+  "model": "crm.quotelineitem",
+  "pk": 194,
+  "fields": {
+    "quote": 12,
+    "product": "ThinkPad T14",
+    "description": "i7, 16GB RAM, 512GB SSD",
+    "unit_price": "3600.00",
+    "pax": 50,
+    "discount": "0.00",
+    "tax": "0.00",
+    "total": "180000.00"
+  }
+},
+{
+  "model": "crm.quotelineitem",
+  "pk": 195,
+  "fields": {
+    "quote": 12,
+    "product": "ThinkPad T14",
+    "description": "i7, 16GB RAM, 512GB SSD",
+    "unit_price": "3600.00",
+    "pax": 50,
+    "discount": "0.00",
+    "tax": "0.00",
+    "total": "180000.00"
+  }
+},
+{
+  "model": "crm.quotelineitem",
+  "pk": 196,
+  "fields": {
+    "quote": 12,
+    "product": "ThinkPad T14",
+    "description": "i7, 16GB RAM, 512GB SSD",
+    "unit_price": "3600.00",
+    "pax": 50,
+    "discount": "0.00",
+    "tax": "0.00",
+    "total": "180000.00"
+  }
+},
+{
+  "model": "crm.quotelineitem",
+  "pk": 197,
+  "fields": {
+    "quote": 12,
+    "product": "ThinkPad T14",
+    "description": "i7, 16GB RAM, 512GB SSD",
+    "unit_price": "3600.00",
+    "pax": 50,
+    "discount": "0.00",
+    "tax": "0.00",
+    "total": "180000.00"
+  }
+},
+{
+  "model": "crm.quotelineitem",
+  "pk": 198,
+  "fields": {
+    "quote": 12,
+    "product": "ThinkPad T14",
+    "description": "i7, 16GB RAM, 512GB SSD",
+    "unit_price": "3600.00",
+    "pax": 50,
+    "discount": "0.00",
+    "tax": "0.00",
+    "total": "180000.00"
+  }
+},
+{
+  "model": "crm.quotelineitem",
+  "pk": 199,
+  "fields": {
+    "quote": 12,
+    "product": "ThinkPad T14",
+    "description": "i7, 16GB RAM, 512GB SSD",
+    "unit_price": "3600.00",
+    "pax": 50,
+    "discount": "0.00",
+    "tax": "0.00",
+    "total": "180000.00"
+  }
+},
+{
+  "model": "crm.quotelineitem",
+  "pk": 200,
+  "fields": {
+    "quote": 12,
+    "product": "ThinkPad T14",
+    "description": "i7, 16GB RAM, 512GB SSD",
+    "unit_price": "3600.00",
+    "pax": 50,
+    "discount": "0.00",
+    "tax": "0.00",
+    "total": "180000.00"
+  }
+},
+{
+  "model": "crm.quotelineitem",
+  "pk": 201,
+  "fields": {
+    "quote": 12,
+    "product": "ThinkPad T14",
+    "description": "i7, 16GB RAM, 512GB SSD",
+    "unit_price": "3600.00",
+    "pax": 50,
+    "discount": "0.00",
+    "tax": "0.00",
+    "total": "180000.00"
+  }
+},
+{
+  "model": "crm.quotelineitem",
+  "pk": 202,
+  "fields": {
+    "quote": 12,
+    "product": "ThinkPad T14",
+    "description": "i7, 16GB RAM, 512GB SSD",
+    "unit_price": "3600.00",
+    "pax": 50,
+    "discount": "0.00",
+    "tax": "0.00",
+    "total": "180000.00"
+  }
+},
+{
+  "model": "crm.quotelineitem",
+  "pk": 203,
+  "fields": {
+    "quote": 12,
+    "product": "ThinkPad T14",
+    "description": "i7, 16GB RAM, 512GB SSD",
+    "unit_price": "3600.00",
+    "pax": 50,
+    "discount": "0.00",
+    "tax": "0.00",
+    "total": "180000.00"
+  }
+},
+{
+  "model": "crm.quotelineitem",
+  "pk": 204,
+  "fields": {
+    "quote": 12,
+    "product": "ThinkPad T14",
+    "description": "i7, 16GB RAM, 512GB SSD",
+    "unit_price": "3600.00",
+    "pax": 50,
+    "discount": "0.00",
+    "tax": "0.00",
+    "total": "180000.00"
+  }
+},
+{
+  "model": "crm.quotelineitem",
+  "pk": 205,
+  "fields": {
+    "quote": 12,
+    "product": "ThinkPad T14",
+    "description": "i7, 16GB RAM, 512GB SSD",
+    "unit_price": "3600.00",
+    "pax": 50,
+    "discount": "0.00",
+    "tax": "0.00",
+    "total": "180000.00"
+  }
+},
+{
+  "model": "crm.quotelineitem",
+  "pk": 206,
+  "fields": {
+    "quote": 15,
+    "product": "ey",
+    "description": "",
+    "unit_price": "100.00",
+    "pax": 1,
+    "discount": "40.00",
+    "tax": "2.00",
+    "total": "61.20"
+  }
+},
+{
+  "model": "crm.quotelineitem",
+  "pk": 207,
+  "fields": {
+    "quote": 15,
+    "product": "ey",
+    "description": "",
+    "unit_price": "100.00",
+    "pax": 1,
+    "discount": "40.00",
+    "tax": "2.00",
+    "total": "61.20"
+  }
+},
+{
+  "model": "crm.quotelineitem",
+  "pk": 208,
+  "fields": {
+    "quote": 16,
+    "product": "e1",
+    "description": "",
+    "unit_price": "200.00",
+    "pax": 2,
+    "discount": "10.00",
+    "tax": "18.00",
+    "total": "424.80"
+  }
+},
+{
+  "model": "crm.quotelineitem",
+  "pk": 209,
+  "fields": {
+    "quote": 16,
+    "product": "e1",
+    "description": "",
+    "unit_price": "200.00",
+    "pax": 2,
+    "discount": "10.00",
+    "tax": "18.00",
+    "total": "424.80"
+  }
+},
+{
+  "model": "crm.salesorder",
+  "pk": 4,
+  "fields": {
+    "number": "SO-CRM-00004",
+    "quote": 12,
+    "customer": 22,
+    "contact": null,
+    "status": "Confirmed",
+    "total": "180000.00",
+    "remark": null,
+    "created_at": "2026-07-15T09:13:29.474Z"
+  }
+},
+{
+  "model": "crm.salesorder",
+  "pk": 7,
+  "fields": {
+    "number": "SO-CRM-00007",
+    "quote": 14,
+    "customer": 20,
+    "contact": null,
+    "status": "Confirmed",
+    "total": "0.00",
+    "remark": null,
+    "created_at": "2026-07-15T12:13:13.395Z"
+  }
+},
+{
+  "model": "crm.salesorder",
+  "pk": 15,
+  "fields": {
+    "number": "SO-CRM-00015",
+    "quote": 15,
+    "customer": 20,
+    "contact": null,
+    "status": "Confirmed",
+    "total": "61.20",
+    "remark": null,
+    "created_at": "2026-07-15T12:53:37.105Z"
+  }
+},
+{
+  "model": "crm.salesorder",
+  "pk": 16,
+  "fields": {
+    "number": "SO-CRM-00016",
+    "quote": 16,
+    "customer": 20,
+    "contact": null,
+    "status": "Confirmed",
+    "total": "424.80",
+    "remark": null,
+    "created_at": "2026-07-15T12:54:26.242Z"
+  }
+},
+{
+  "model": "crm.salesorder",
+  "pk": 17,
+  "fields": {
+    "number": "SO-CRM-00017",
+    "quote": 17,
+    "customer": 22,
+    "contact": null,
+    "status": "Confirmed",
+    "total": "0.00",
+    "remark": null,
+    "created_at": "2026-07-15T13:08:40.734Z"
+  }
+},
+{
+  "model": "crm.salesorder",
+  "pk": 18,
+  "fields": {
+    "number": "SO-CRM-00018",
+    "quote": 18,
+    "customer": 23,
+    "contact": null,
+    "status": "Confirmed",
+    "total": "9000.00",
+    "remark": null,
+    "created_at": "2026-07-20T08:20:27.659Z"
+  }
+},
+{
+  "model": "crm.invoice",
+  "pk": 17,
+  "fields": {
+    "number": "INV-CRM-00017",
+    "customer": 20,
+    "contact": null,
+    "date_issued": "2026-05-16",
+    "due_date": "2026-06-15",
+    "subtotal": "20000.00",
+    "discount": "0.00",
+    "total": "20000.00",
+    "status": "Paid",
+    "remark": null,
+    "memo": null,
+    "created_at": "2026-07-15T09:13:29.478Z"
+  }
+},
+{
+  "model": "crm.invoice",
+  "pk": 18,
+  "fields": {
+    "number": "INV-CRM-00018",
+    "customer": 20,
+    "contact": null,
+    "date_issued": "2026-07-15",
+    "due_date": "2026-08-14",
+    "subtotal": "15000.00",
+    "discount": "0.00",
+    "total": "15000.00",
+    "status": "Sent",
+    "remark": null,
+    "memo": null,
+    "created_at": "2026-07-15T09:13:29.482Z"
+  }
+},
+{
+  "model": "crm.invoice",
+  "pk": 19,
+  "fields": {
+    "number": "INV-CRM-00019",
+    "customer": 22,
+    "contact": null,
+    "date_issued": "2026-05-31",
+    "due_date": "2026-06-30",
+    "subtotal": "35000.00",
+    "discount": "0.00",
+    "total": "35000.00",
+    "status": "Overdue",
+    "remark": null,
+    "memo": null,
+    "created_at": "2026-07-15T09:13:29.487Z"
+  }
+},
+{
+  "model": "crm.invoice",
+  "pk": 20,
+  "fields": {
+    "number": "INV-CRM-00020",
+    "customer": 21,
+    "contact": null,
+    "date_issued": "2026-03-17",
+    "due_date": "2026-04-16",
+    "subtotal": "5500.00",
+    "discount": "0.00",
+    "total": "5500.00",
+    "status": "Overdue",
+    "remark": null,
+    "memo": null,
+    "created_at": "2026-07-15T09:13:29.491Z"
+  }
+},
+{
+  "model": "crm.lognote",
+  "pk": 10,
+  "fields": {
+    "customer": null,
+    "opportunity": 62,
+    "type": "Meeting",
+    "note": "Initial requirement gathering meeting went well. Proceeding to proposal.",
+    "created_by": "Swayam",
+    "created_at": "2026-07-15T09:13:29.495Z"
+  }
+},
+{
+  "model": "crm.lognote",
+  "pk": 11,
+  "fields": {
+    "customer": null,
+    "opportunity": 62,
+    "type": "Call",
+    "note": "Discussed pricing structure. Requested a 5k discount.",
+    "created_by": "Swayam",
+    "created_at": "2026-07-15T09:13:29.497Z"
+  }
+},
+{
+  "model": "crm.lognote",
+  "pk": 12,
+  "fields": {
+    "customer": null,
+    "opportunity": 64,
+    "type": "Task",
+    "note": "Prepare hardware dispatch schedule.",
+    "created_by": "Swayam",
+    "created_at": "2026-07-15T09:13:29.500Z"
+  }
+},
+{
+  "model": "crm.lognote",
+  "pk": 13,
+  "fields": {
+    "customer": null,
+    "opportunity": 66,
+    "type": "Task",
+    "note": "do validation testing",
+    "created_by": null,
+    "created_at": "2026-07-15T13:02:21.512Z"
+  }
+},
+{
+  "model": "crm.lognote",
+  "pk": 14,
+  "fields": {
+    "customer": null,
+    "opportunity": 66,
+    "type": "Task",
+    "note": "qa",
+    "created_by": null,
+    "created_at": "2026-07-15T13:07:31.010Z"
+  }
+},
+{
+  "model": "system_admin.role",
+  "pk": 9,
+  "fields": {
+    "name": "Sales Manager",
+    "description": "Manages the sales team and pipeline",
+    "created_at": "2026-07-15T09:13:29.854Z"
+  }
+},
+{
+  "model": "system_admin.role",
+  "pk": 10,
+  "fields": {
+    "name": "Sales Executive",
+    "description": "Front-line sales rep managing customers and opportunities",
+    "created_at": "2026-07-15T09:13:29.855Z"
+  }
+},
+{
+  "model": "system_admin.role",
+  "pk": 11,
+  "fields": {
+    "name": "Finance",
+    "description": "Handles invoicing, receivables and payments",
+    "created_at": "2026-07-15T09:13:29.858Z"
+  }
+},
+{
+  "model": "system_admin.role",
+  "pk": 12,
+  "fields": {
+    "name": "System Administrator",
+    "description": "Full access to all modules and settings",
+    "created_at": "2026-07-15T09:13:29.861Z"
+  }
+},
+{
+  "model": "system_admin.subsidiary",
+  "pk": 5,
+  "fields": {
+    "name": "TALXOne Sdn. Bhd.",
+    "address": "Level 15, Menara Maxis, Kuala Lumpur City Centre, 50088 Kuala Lumpur",
+    "tax_id": "C-12345678",
+    "created_at": "2026-07-15T09:13:29.863Z"
+  }
+},
+{
+  "model": "system_admin.subsidiary",
+  "pk": 6,
+  "fields": {
+    "name": "TALXOne Penang Branch",
+    "address": "10-1, Jalan Bukit Mertajam, 14000 Bukit Mertajam, Penang",
+    "tax_id": "C-12345679",
+    "created_at": "2026-07-15T09:13:29.865Z"
+  }
+},
+{
+  "model": "tasks.taskpriority",
+  "pk": 10,
+  "fields": {
+    "name": "High",
+    "code": "H",
+    "color": "#ff0000",
+    "order": 1,
+    "created_by": [
+      "admin"
+    ]
+  }
+},
+{
+  "model": "tasks.taskpriority",
+  "pk": 11,
+  "fields": {
+    "name": "Medium",
+    "code": "M",
+    "color": "#ffff00",
+    "order": 2,
+    "created_by": [
+      "admin"
+    ]
+  }
+},
+{
+  "model": "tasks.taskpriority",
+  "pk": 12,
+  "fields": {
+    "name": "Low",
+    "code": "L",
+    "color": "#00ff00",
+    "order": 3,
+    "created_by": [
+      "admin"
+    ]
+  }
+},
+{
+  "model": "tasks.projectstatus",
+  "pk": 7,
+  "fields": {
+    "name": "Active",
+    "code": "A",
+    "order": 1,
+    "color": "#00ff00"
+  }
+},
+{
+  "model": "tasks.projectstatus",
+  "pk": 8,
+  "fields": {
+    "name": "On Hold",
+    "code": "H",
+    "order": 2,
+    "color": "#ffff00"
+  }
+},
+{
+  "model": "tasks.project",
+  "pk": 7,
+  "fields": {
+    "title": "CRM Implementation for Acme Corp",
+    "description": "Deploying the new CRM modules.",
+    "start_date": "2026-07-15T00:00:00Z",
+    "end_date": "2026-09-13T00:00:00Z",
+    "privacy": "A",
+    "created_by": [
+      "admin"
+    ],
+    "assignee": [
+      "admin"
+    ],
+    "status": 7,
+    "is_deleted": false,
+    "assessment_status": "A",
+    "extended_status": null,
+    "created_on": "2026-07-15T09:13:29.831Z",
+    "last_modified": "2026-07-15T09:13:29.831Z"
+  }
+},
+{
+  "model": "tasks.project",
+  "pk": 8,
+  "fields": {
+    "title": "Website Redesign",
+    "description": "Overhaul of corporate website.",
+    "start_date": null,
+    "end_date": null,
+    "privacy": "A",
+    "created_by": [
+      "admin"
+    ],
+    "assignee": [
+      "admin"
+    ],
+    "status": 8,
+    "is_deleted": false,
+    "assessment_status": "A",
+    "extended_status": null,
+    "created_on": "2026-07-15T09:13:29.834Z",
+    "last_modified": "2026-07-15T09:13:29.834Z"
+  }
+},
+{
+  "model": "tasks.tasklist",
+  "pk": 10,
+  "fields": {
+    "name": "To Do",
+    "description": null,
+    "color": "#828383",
+    "order": 1,
+    "project": 7
+  }
+},
+{
+  "model": "tasks.tasklist",
+  "pk": 11,
+  "fields": {
+    "name": "In Progress",
+    "description": null,
+    "color": "#828383",
+    "order": 2,
+    "project": 7
+  }
+},
+{
+  "model": "tasks.tasklist",
+  "pk": 12,
+  "fields": {
+    "name": "Done",
+    "description": null,
+    "color": "#828383",
+    "order": 3,
+    "project": 7
+  }
+},
+{
+  "model": "tasks.task",
+  "pk": 13,
+  "fields": {
+    "title": "Gather requirements from Acme",
+    "description": "Schedule a call to finalize features.",
+    "start_date": "2026-07-10",
+    "start_time": null,
+    "end_date": "2026-07-12",
+    "end_time": null,
+    "startdatetime": null,
+    "enddatetime": null,
+    "is_allday": false,
+    "is_recurring": false,
+    "recurring_type": null,
+    "recurring_start_date": null,
+    "recurring_end_date": null,
+    "recurring_every": null,
+    "recurring_day": null,
+    "recurring_monthly_type": null,
+    "recurring_monthly_date": null,
+    "recurring_monthly_week": null,
+    "recurring_monthly_weekday": null,
+    "recurring_yearly_type": null,
+    "recurring_yearly_month": null,
+    "recurring_yearly_date": null,
+    "recurring_yearly_week": null,
+    "recurring_yearly_weekday": null,
+    "priority": 10,
+    "project": 7,
+    "task_list": 12,
+    "color": null,
+    "status": "C",
+    "extended_status": null,
+    "task_type": null,
+    "assignee": [
+      "admin"
+    ],
+    "created_by": [
+      "admin"
+    ],
+    "reportee": null,
+    "timezone": null,
+    "completed_percentage": 100,
+    "include_weekend": false,
+    "completed_on": "2026-07-15T09:13:29.842Z",
+    "assessment_status": "A",
+    "is_sla": false,
+    "is_reminder": false,
+    "reminder_type": null,
+    "reminder_before": 0,
+    "reminder_date": null,
+    "is_reminderall": null,
+    "external_ref": null,
+    "ticket_id": null,
+    "repeat_id": null,
+    "created_on": "2026-07-15T09:13:29.842Z",
+    "last_modified": "2026-07-15T09:13:29.842Z"
+  }
+},
+{
+  "model": "tasks.task",
+  "pk": 14,
+  "fields": {
+    "title": "Configure backend server",
+    "description": "Set up MySQL and Django environment.",
+    "start_date": "2026-07-15",
+    "start_time": null,
+    "end_date": "2026-07-17",
+    "end_time": null,
+    "startdatetime": null,
+    "enddatetime": null,
+    "is_allday": false,
+    "is_recurring": false,
+    "recurring_type": null,
+    "recurring_start_date": null,
+    "recurring_end_date": null,
+    "recurring_every": null,
+    "recurring_day": null,
+    "recurring_monthly_type": null,
+    "recurring_monthly_date": null,
+    "recurring_monthly_week": null,
+    "recurring_monthly_weekday": null,
+    "recurring_yearly_type": null,
+    "recurring_yearly_month": null,
+    "recurring_yearly_date": null,
+    "recurring_yearly_week": null,
+    "recurring_yearly_weekday": null,
+    "priority": 10,
+    "project": 7,
+    "task_list": 11,
+    "color": null,
+    "status": "P",
+    "extended_status": null,
+    "task_type": null,
+    "assignee": [
+      "admin"
+    ],
+    "created_by": [
+      "admin"
+    ],
+    "reportee": null,
+    "timezone": null,
+    "completed_percentage": 50,
+    "include_weekend": false,
+    "completed_on": null,
+    "assessment_status": "A",
+    "is_sla": false,
+    "is_reminder": false,
+    "reminder_type": null,
+    "reminder_before": 0,
+    "reminder_date": null,
+    "is_reminderall": null,
+    "external_ref": null,
+    "ticket_id": null,
+    "repeat_id": null,
+    "created_on": "2026-07-15T09:13:29.848Z",
+    "last_modified": "2026-07-15T09:13:29.848Z"
+  }
+},
+{
+  "model": "tasks.task",
+  "pk": 15,
+  "fields": {
+    "title": "Write API documentation",
+    "description": "Document all endpoints using Swagger.",
+    "start_date": "2026-07-18",
+    "start_time": null,
+    "end_date": "2026-07-20",
+    "end_time": null,
+    "startdatetime": null,
+    "enddatetime": null,
+    "is_allday": false,
+    "is_recurring": false,
+    "recurring_type": null,
+    "recurring_start_date": null,
+    "recurring_end_date": null,
+    "recurring_every": null,
+    "recurring_day": null,
+    "recurring_monthly_type": null,
+    "recurring_monthly_date": null,
+    "recurring_monthly_week": null,
+    "recurring_monthly_weekday": null,
+    "recurring_yearly_type": null,
+    "recurring_yearly_month": null,
+    "recurring_yearly_date": null,
+    "recurring_yearly_week": null,
+    "recurring_yearly_weekday": null,
+    "priority": 11,
+    "project": 7,
+    "task_list": 10,
+    "color": null,
+    "status": "O",
+    "extended_status": null,
+    "task_type": null,
+    "assignee": [
+      "admin"
+    ],
+    "created_by": [
+      "admin"
+    ],
+    "reportee": null,
+    "timezone": null,
+    "completed_percentage": 0,
+    "include_weekend": false,
+    "completed_on": null,
+    "assessment_status": "A",
+    "is_sla": false,
+    "is_reminder": false,
+    "reminder_type": null,
+    "reminder_before": 0,
+    "reminder_date": null,
+    "is_reminderall": null,
+    "external_ref": null,
+    "ticket_id": null,
+    "repeat_id": null,
+    "created_on": "2026-07-15T09:13:29.850Z",
+    "last_modified": "2026-07-15T09:13:29.850Z"
+  }
+},
+{
+  "model": "tasks.task",
+  "pk": 16,
+  "fields": {
+    "title": "Design new logo",
+    "description": null,
+    "start_date": null,
+    "start_time": null,
+    "end_date": null,
+    "end_time": null,
+    "startdatetime": null,
+    "enddatetime": null,
+    "is_allday": false,
+    "is_recurring": false,
+    "recurring_type": null,
+    "recurring_start_date": null,
+    "recurring_end_date": null,
+    "recurring_every": null,
+    "recurring_day": null,
+    "recurring_monthly_type": null,
+    "recurring_monthly_date": null,
+    "recurring_monthly_week": null,
+    "recurring_monthly_weekday": null,
+    "recurring_yearly_type": null,
+    "recurring_yearly_month": null,
+    "recurring_yearly_date": null,
+    "recurring_yearly_week": null,
+    "recurring_yearly_weekday": null,
+    "priority": 12,
+    "project": 8,
+    "task_list": null,
+    "color": null,
+    "status": "H",
+    "extended_status": null,
+    "task_type": null,
+    "assignee": null,
+    "created_by": [
+      "admin"
+    ],
+    "reportee": null,
+    "timezone": null,
+    "completed_percentage": 0,
+    "include_weekend": false,
+    "completed_on": null,
+    "assessment_status": "A",
+    "is_sla": false,
+    "is_reminder": false,
+    "reminder_type": null,
+    "reminder_before": 0,
+    "reminder_date": null,
+    "is_reminderall": null,
+    "external_ref": null,
+    "ticket_id": null,
+    "repeat_id": null,
+    "created_on": "2026-07-15T09:13:29.852Z",
+    "last_modified": "2026-07-15T09:13:29.852Z"
+  }
+},
+{
+  "model": "tasks.taskstatusupdate",
+  "pk": 4,
+  "fields": {
+    "title": null,
+    "status": "C",
+    "description": "Requirements finalized.",
+    "created_by": [
+      "admin"
+    ],
+    "task": 13,
+    "created_on": "2026-07-15T09:13:29.845Z",
+    "last_modified": "2026-07-15T09:13:29.845Z"
+  }
+}
+]
