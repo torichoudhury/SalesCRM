@@ -1,3 +1,4 @@
-web: python manage.py flush --no-input && python manage.py migrate && python manage.py loaddata datadump.json && gunicorn backend_core.wsgi --bind 0.0.0.0:$PORT
+web: python load_data.py && gunicorn backend_core.wsgi --bind 0.0.0.0:$PORT
+
 
 

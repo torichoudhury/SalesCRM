@@ -258,6 +258,8 @@ from django.dispatch import receiver
 
 @receiver([post_save, post_delete], sender=QuoteLineItem)
 def sync_quote_total(sender, instance, **kwargs):
+    if kwargs.get('raw'):
+        return
     from decimal import Decimal
     quote = instance.quote
     items = quote.line_items.all()
@@ -271,6 +273,8 @@ def sync_quote_total(sender, instance, **kwargs):
 
 @receiver(post_save, sender=Quote)
 def auto_create_sales_order(sender, instance, created, **kwargs):
+    if kwargs.get('raw'):
+        return
     if instance.status == 'Approved':
         if not hasattr(instance, 'sales_order'):
             SalesOrder.objects.create(
@@ -280,3 +284,4 @@ def auto_create_sales_order(sender, instance, created, **kwargs):
                 total=instance.total,
                 status='Confirmed',
             )
+
