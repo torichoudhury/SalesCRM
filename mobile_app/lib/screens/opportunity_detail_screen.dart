@@ -4,7 +4,6 @@ import '../providers/crm_provider.dart';
 import '../services/api_client.dart';
 import 'dart:convert';
 import 'opportunity_form_screen.dart';
-import 'quote_form_screen.dart';
 
 class OpportunityDetailScreen extends ConsumerStatefulWidget {
   final Map<String, dynamic> opportunity;
@@ -101,6 +100,7 @@ class _OpportunityDetailScreenState extends ConsumerState<OpportunityDetailScree
       });
       if (response.statusCode == 200) {
         setState(() => _aiScore = jsonDecode(response.body));
+        if (mounted) _showAiSuccessPopup('Lead Scoring');
       } else {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(content: Text('Scoring failed: ${response.body}')),
@@ -140,6 +140,7 @@ class _OpportunityDetailScreenState extends ConsumerState<OpportunityDetailScree
         final itemsData = jsonDecode(itemsResp.body);
         
         if (mounted) {
+          _showAiSuccessPopup('Activity Log Analysis');
           _showAiAnalysisResult(sentData, itemsData);
         }
       } else {
@@ -249,6 +250,22 @@ class _OpportunityDetailScreenState extends ConsumerState<OpportunityDetailScree
                   onPressed: () => Navigator.pop(context),
                   child: const Text('Done'),
                 ),
+                const SizedBox(height: 8),
+                TextButton.icon(
+                  onPressed: () {
+                    Navigator.pop(context);
+                    _showAiExplanation(
+                      'Activity Log Analysis',
+                      'The AI analysed all your logged notes for this opportunity using sentiment analysis and action item extraction.\n\n'
+                      '• Sentiment: Classified the tone of each note as Positive, Neutral, or Negative based on language patterns.\n'
+                      '• Risk Flags: Detected phrases indicating objections, delays, or disengagement.\n'
+                      '• Action Items: Extracted tasks or commitments mentioned in the notes.\n\n'
+                      'The model was Gemini 2.0 Flash, processing all notes as a combined input.',
+                    );
+                  },
+                  icon: const Icon(Icons.info_outline_rounded, size: 16),
+                  label: const Text('How AI did this?', style: TextStyle(fontSize: 12)),
+                ),
               ],
             ),
           ),
@@ -284,6 +301,72 @@ class _OpportunityDetailScreenState extends ConsumerState<OpportunityDetailScree
     }
   }
 
+  void _showAiSuccessPopup(String featureName) {
+    ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(
+        duration: const Duration(seconds: 3),
+        behavior: SnackBarBehavior.floating,
+        backgroundColor: const Color(0xFF22c55e),
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+        content: Row(
+          children: [
+            const Icon(Icons.check_circle_rounded, color: Colors.white, size: 20),
+            const SizedBox(width: 10),
+            Expanded(
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  const Text('AI analysis complete',
+                      style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 13)),
+                  Text(featureName,
+                      style: const TextStyle(color: Colors.white70, fontSize: 11)),
+                ],
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  void _showAiExplanation(String title, String explanation) {
+    showDialog(
+      context: context,
+      builder: (context) => AlertDialog(
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
+        title: Row(
+          children: [
+            CircleAvatar(
+              radius: 14,
+              backgroundColor: Theme.of(context).colorScheme.primary.withOpacity(0.12),
+              child: Icon(Icons.psychology_rounded, size: 16, color: Theme.of(context).colorScheme.primary),
+            ),
+            const SizedBox(width: 10),
+            Expanded(child: Text('How AI did this', style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold))),
+          ],
+        ),
+        content: SingleChildScrollView(
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(title, style: const TextStyle(fontWeight: FontWeight.w600, fontSize: 13)),
+              const SizedBox(height: 8),
+              Text(explanation, style: const TextStyle(fontSize: 13, height: 1.5, color: Colors.grey)),
+            ],
+          ),
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(context),
+            child: const Text('Got it'),
+          ),
+        ],
+      ),
+    );
+  }
+
   Future<void> _generateMeetingPrep(List<dynamic> notes) async {
     showDialog(
       context: context,
@@ -309,6 +392,7 @@ class _OpportunityDetailScreenState extends ConsumerState<OpportunityDetailScree
       if (response.statusCode == 200) {
         final data = jsonDecode(response.body);
         if (mounted) {
+          _showAiSuccessPopup('Meeting Prep');
           _showMeetingPrepResult(data);
         }
       } else {
@@ -381,6 +465,22 @@ class _OpportunityDetailScreenState extends ConsumerState<OpportunityDetailScree
                   onPressed: () => Navigator.pop(context),
                   style: FilledButton.styleFrom(backgroundColor: Colors.indigo),
                   child: const Text('Close'),
+                ),
+                const SizedBox(height: 8),
+                TextButton.icon(
+                  onPressed: () {
+                    Navigator.pop(context);
+                    _showAiExplanation(
+                      'AI Meeting Preparation',
+                      'The AI generated strategic talking points by analysing:\n\n'
+                      '• Recent activity log notes to understand where the conversation last left off.\n'
+                      '• Participant names to tailor the language and context.\n'
+                      '• Deal stage and history to identify key concerns to address.\n\n'
+                      'The output is structured talking points that help the sales rep steer the meeting towards closing. Powered by Gemini 2.0 Flash.',
+                    );
+                  },
+                  icon: const Icon(Icons.info_outline_rounded, size: 16),
+                  label: const Text('How AI did this?', style: TextStyle(fontSize: 12)),
                 ),
               ],
             ),
@@ -536,7 +636,7 @@ class _OpportunityDetailScreenState extends ConsumerState<OpportunityDetailScree
                           backgroundColor: Theme.of(context).colorScheme.primary.withOpacity(0.1),
                           child: Icon(Icons.psychology_rounded, color: Theme.of(context).colorScheme.primary, size: 20),
                         ),
-                   title: const Text("AI Lead Scoring", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 14)),
+                  title: const Text("AI Lead Scoring", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 14)),
                   subtitle: const Text("Calculate deal closing probability using AI", style: TextStyle(fontSize: 12)),
                   trailing: const Icon(Icons.bolt_rounded, color: Colors.amber),
                   onTap: _loadingScore ? null : () => _runLeadScoring(oppLogNotes.value ?? []),
@@ -564,20 +664,37 @@ class _OpportunityDetailScreenState extends ConsumerState<OpportunityDetailScree
                               const Text("AI Lead Score", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 14)),
                             ],
                           ),
-                          Container(
-                            padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
-                            decoration: BoxDecoration(
-                              color: (_aiScore!['confidence'] == 'high' ? Colors.green : Colors.orange).withOpacity(0.1),
-                              borderRadius: BorderRadius.circular(12),
-                            ),
-                            child: Text(
-                              "Confidence: ${(_aiScore!['confidence'] ?? '').toString().toUpperCase()}",
-                              style: TextStyle(
-                                fontSize: 11,
-                                fontWeight: FontWeight.bold,
-                                color: _aiScore!['confidence'] == 'high' ? Colors.green : Colors.orange,
+                          Row(
+                            children: [
+                              IconButton(
+                                icon: const Icon(Icons.info_outline_rounded, size: 18),
+                                tooltip: 'How AI did this?',
+                                onPressed: () => _showAiExplanation(
+                                  'AI Lead Scoring',
+                                  'The AI evaluated the probability of closing this deal by analysing:\n\n'
+                                  '• Deal title and description to understand the opportunity type.\n'
+                                  '• Expected revenue to gauge deal weight.\n'
+                                  '• Current stage (${_opp['stage']}) and priority (${_opp['priority']}) to assess momentum.\n'
+                                  '• All logged activity notes to detect engagement signals.\n\n'
+                                  'The score (0–100) represents closing probability. Confidence reflects how much data was available. Powered by Gemini 2.0 Flash.',
+                                ),
                               ),
-                            ),
+                              Container(
+                                padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
+                                decoration: BoxDecoration(
+                                  color: (_aiScore!['confidence'] == 'high' ? Colors.green : Colors.orange).withOpacity(0.1),
+                                  borderRadius: BorderRadius.circular(12),
+                                ),
+                                child: Text(
+                                  "Confidence: ${(_aiScore!['confidence'] ?? '').toString().toUpperCase()}",
+                                  style: TextStyle(
+                                    fontSize: 11,
+                                    fontWeight: FontWeight.bold,
+                                    color: _aiScore!['confidence'] == 'high' ? Colors.green : Colors.orange,
+                                  ),
+                                ),
+                              ),
+                            ],
                           ),
                         ],
                       ),
@@ -662,17 +779,29 @@ class _OpportunityDetailScreenState extends ConsumerState<OpportunityDetailScree
             const SizedBox(height: 16),
 
             // Quotations Section
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Text('Quotations', style: Theme.of(context).textTheme.titleSmall?.copyWith(fontWeight: FontWeight.bold)),
-                TextButton.icon(
-                  icon: const Icon(Icons.add, size: 16),
-                  label: const Text('New Quote'),
-                  onPressed: () => Navigator.push(context, MaterialPageRoute(
-                    builder: (_) => QuoteFormScreen(opportunityId: _opp['id'], customerId: _opp['customer']))),
-                ),
-              ],
+            Padding(
+              padding: const EdgeInsets.only(bottom: 8),
+              child: Row(
+                children: [
+                  Text('Quotations', style: Theme.of(context).textTheme.titleSmall?.copyWith(fontWeight: FontWeight.bold)),
+                  const SizedBox(width: 8),
+                  Container(
+                    padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
+                    decoration: BoxDecoration(
+                      color: Colors.grey.withOpacity(0.12),
+                      borderRadius: BorderRadius.circular(8),
+                    ),
+                    child: const Row(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Icon(Icons.lock_rounded, size: 11, color: Colors.grey),
+                        SizedBox(width: 3),
+                        Text('View only', style: TextStyle(fontSize: 10, color: Colors.grey)),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
             ),
             quotesAsync.when(
               loading: () => const SizedBox(),

@@ -74,84 +74,223 @@ class _SalesOrderCard extends StatelessWidget {
     }
   }
 
+  IconData _statusIcon(String status) {
+    switch (status) {
+      case 'Confirmed': return Icons.check_circle_rounded;
+      case 'Delivered': return Icons.local_shipping_rounded;
+      case 'Cancelled': return Icons.cancel_rounded;
+      default: return Icons.shopping_bag_rounded;
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     final status = order['status'] ?? 'Draft';
     final color = _statusColor(status);
+    final createdAt = order['created_at']?.toString().split('T')[0] ?? '';
+    final quoteNumber = order['quote_number']?.toString();
+    final itemCount = order['item_count'];
+    final deliveryAddress = order['delivery_address']?.toString();
+    final remark = order['remark']?.toString();
 
     return Card(
       margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 6),
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
-      elevation: 1,
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(14)),
+      elevation: 2,
+      shadowColor: color.withOpacity(0.1),
       child: Padding(
         padding: const EdgeInsets.all(14),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
+            // ── Header Row ──────────────────────────────────────
             Row(
               children: [
                 Container(
-                  padding: const EdgeInsets.all(8),
+                  width: 44, height: 44,
                   decoration: BoxDecoration(
                     color: color.withOpacity(0.12),
-                    borderRadius: BorderRadius.circular(10),
+                    borderRadius: BorderRadius.circular(12),
                   ),
-                  child: Icon(Icons.shopping_bag_rounded, color: color, size: 20),
+                  child: Icon(_statusIcon(status), color: color, size: 22),
                 ),
                 const SizedBox(width: 12),
                 Expanded(
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text(order['number'] ?? '', style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 15)),
-                      Text(order['customer_name'] ?? '', style: const TextStyle(color: Colors.grey, fontSize: 13)),
+                      Text(
+                        order['number'] ?? '',
+                        style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
+                      ),
+                      const SizedBox(height: 2),
+                      Row(
+                        children: [
+                          const Icon(Icons.business_rounded, size: 12, color: Colors.grey),
+                          const SizedBox(width: 4),
+                          Expanded(
+                            child: Text(
+                              order['customer_name'] ?? '',
+                              style: const TextStyle(color: Colors.grey, fontSize: 12),
+                              overflow: TextOverflow.ellipsis,
+                            ),
+                          ),
+                        ],
+                      ),
                     ],
                   ),
                 ),
                 Container(
-                  padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
+                  padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
                   decoration: BoxDecoration(
                     color: color.withOpacity(0.12),
                     borderRadius: BorderRadius.circular(20),
                   ),
-                  child: Text(status, style: TextStyle(color: color, fontWeight: FontWeight.bold, fontSize: 12)),
+                  child: Text(
+                    status,
+                    style: TextStyle(color: color, fontWeight: FontWeight.bold, fontSize: 12),
+                  ),
                 ),
               ],
             ),
-            const SizedBox(height: 10),
+
+            const SizedBox(height: 12),
             const Divider(height: 1),
-            const SizedBox(height: 10),
+            const SizedBox(height: 12),
+
+            // ── Stats Row ────────────────────────────────────────
             Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
+                _OrderStat(
+                  icon: Icons.payments_rounded,
+                  label: 'Total',
+                  value: 'MYR ${order['total'] ?? '0.00'}',
+                  valueColor: Theme.of(context).colorScheme.primary,
+                ),
+                if (quoteNumber != null) ...[
+                  const _StatDivider(),
+                  _OrderStat(
+                    icon: Icons.description_rounded,
+                    label: 'From Quote',
+                    value: quoteNumber,
+                  ),
+                ],
+                if (itemCount != null) ...[
+                  const _StatDivider(),
+                  _OrderStat(
+                    icon: Icons.inventory_2_rounded,
+                    label: 'Items',
+                    value: itemCount.toString(),
+                  ),
+                ],
+                const _StatDivider(),
+                _OrderStat(
+                  icon: Icons.calendar_today_rounded,
+                  label: 'Date',
+                  value: createdAt,
+                ),
+              ],
+            ),
+
+            // ── Bottom strip (address / remark) ──────────────────
+            if (deliveryAddress != null && deliveryAddress.isNotEmpty) ...[
+              const SizedBox(height: 10),
+              Container(
+                padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
+                decoration: BoxDecoration(
+                  color: Theme.of(context).colorScheme.surfaceContainerHighest.withOpacity(0.4),
+                  borderRadius: BorderRadius.circular(8),
+                ),
+                child: Row(
                   children: [
-                    const Text('Total', style: TextStyle(color: Colors.grey, fontSize: 12)),
-                    Text('MYR ${order['total'] ?? '0.00'}',
-                        style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            fontSize: 16,
-                            color: Theme.of(context).colorScheme.primary)),
+                    const Icon(Icons.location_on_rounded, size: 14, color: Colors.grey),
+                    const SizedBox(width: 6),
+                    Expanded(
+                      child: Text(
+                        deliveryAddress,
+                        style: const TextStyle(fontSize: 12, color: Colors.grey),
+                        maxLines: 1,
+                        overflow: TextOverflow.ellipsis,
+                      ),
+                    ),
                   ],
                 ),
-                if (order['quote_number'] != null)
-                  Column(
-                    crossAxisAlignment: CrossAxisAlignment.end,
-                    children: [
-                      const Text('From Quote', style: TextStyle(color: Colors.grey, fontSize: 12)),
-                      Text(order['quote_number'], style: const TextStyle(fontWeight: FontWeight.w500, fontSize: 13)),
-                    ],
-                  ),
-                Text(
-                  order['created_at']?.toString().split('T')[0] ?? '',
-                  style: const TextStyle(color: Colors.grey, fontSize: 12),
+              ),
+            ] else if (remark != null && remark.isNotEmpty) ...[
+              const SizedBox(height: 10),
+              Container(
+                padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
+                decoration: BoxDecoration(
+                  color: Theme.of(context).colorScheme.surfaceContainerHighest.withOpacity(0.4),
+                  borderRadius: BorderRadius.circular(8),
                 ),
-              ],
-            ),
+                child: Row(
+                  children: [
+                    const Icon(Icons.notes_rounded, size: 14, color: Colors.grey),
+                    const SizedBox(width: 6),
+                    Expanded(
+                      child: Text(
+                        remark,
+                        style: const TextStyle(fontSize: 12, color: Colors.grey),
+                        maxLines: 1,
+                        overflow: TextOverflow.ellipsis,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ],
           ],
         ),
       ),
+    );
+  }
+}
+
+class _OrderStat extends StatelessWidget {
+  final IconData icon;
+  final String label;
+  final String value;
+  final Color? valueColor;
+  const _OrderStat({required this.icon, required this.label, required this.value, this.valueColor});
+
+  @override
+  Widget build(BuildContext context) {
+    return Expanded(
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Row(
+            children: [
+              Icon(icon, size: 11, color: Colors.grey),
+              const SizedBox(width: 3),
+              Text(label, style: const TextStyle(fontSize: 10, color: Colors.grey)),
+            ],
+          ),
+          const SizedBox(height: 2),
+          Text(
+            value,
+            style: TextStyle(
+              fontSize: 12,
+              fontWeight: FontWeight.w600,
+              color: valueColor,
+            ),
+            overflow: TextOverflow.ellipsis,
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class _StatDivider extends StatelessWidget {
+  const _StatDivider();
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      width: 1, height: 28,
+      margin: const EdgeInsets.symmetric(horizontal: 8),
+      color: Colors.grey.withOpacity(0.2),
     );
   }
 }

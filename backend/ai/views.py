@@ -46,7 +46,7 @@ def get_gemini_client():
         if not api_key:
             raise ValueError("GEMINI_API_KEY is not set in .env")
         genai.configure(api_key=api_key)
-        return genai.GenerativeModel("gemini-3.5-flash")
+        return genai.GenerativeModel("gemini-2.0-flash")
     except ImportError:
         raise ImportError("google-generativeai package not installed. Run: pip install google-generativeai")
 
