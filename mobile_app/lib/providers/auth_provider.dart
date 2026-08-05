@@ -67,11 +67,19 @@ class AuthNotifier extends Notifier<AuthState> {
         );
         return true;
       } else {
-        String errorMsg = 'Login failed';
+        String errorMsg = 'Invalid username or password. Please check your credentials and try again.';
         try {
           final data = jsonDecode(response.body);
-          // JWT endpoint returns {"detail": "No active account found..."}
-          errorMsg = data['detail'] ?? data['error'] ?? errorMsg;
+          if (data['detail'] != null && data['detail'].toString().isNotEmpty) {
+            final detail = data['detail'].toString();
+            if (detail.toLowerCase().contains('no active account') || detail.toLowerCase().contains('invalid')) {
+              errorMsg = 'Invalid username or password. Please check your credentials and try again.';
+            } else {
+              errorMsg = detail;
+            }
+          } else if (data['error'] != null) {
+            errorMsg = data['error'].toString();
+          }
         } catch (_) {}
         state = AuthState(isLoading: false, isAuthenticated: false, error: errorMsg);
         return false;
@@ -88,7 +96,7 @@ class AuthNotifier extends Notifier<AuthState> {
 
   Future<void> logout() async {
     await apiClient.clearTokens();
-    state = AuthState(isAuthenticated: false);
+    state = AuthState(isAuthenticated: false, username: null, isLoading: false, error: null);
   }
 }
 

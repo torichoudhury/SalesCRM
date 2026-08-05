@@ -91,10 +91,12 @@ class _CrmScreenState extends ConsumerState<CrmScreen> with SingleTickerProvider
           ],
         ),
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _onFabTap,
-        child: const Icon(Icons.add),
-      ),
+      floatingActionButton: _tabController.index < 3
+          ? FloatingActionButton(
+              onPressed: _onFabTap,
+              child: const Icon(Icons.add),
+            )
+          : null,
       body: Column(
         children: [
           Padding(

@@ -30,19 +30,6 @@ class DashboardScreen extends ConsumerWidget {
           ],
         ),
         elevation: 0,
-        actions: [
-          Padding(
-            padding: const EdgeInsets.only(right: 12),
-            child: CircleAvatar(
-              radius: 16,
-              backgroundColor: Theme.of(context).colorScheme.primary,
-              child: Text(
-                (authState.username ?? 'A')[0].toUpperCase(),
-                style: const TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 14),
-              ),
-            ),
-          ),
-        ],
       ),
       drawer: const AppDrawer(),
       body: dashboardAsync.when(
@@ -81,11 +68,8 @@ class _DashboardContent extends StatelessWidget {
     final kpis = data['kpis'] as Map<String, dynamic>;
     final crm = data['crm_performance'] as Map<String, dynamic>;
     final sales = data['sales_metrics'] as Map<String, dynamic>;
-    final quotes = data['quote_metrics'] as Map<String, dynamic>;
     final budget = data['budget'] as Map<String, dynamic>;
     final now = DateTime.now();
-    final hour = now.hour;
-    final greeting = hour < 12 ? 'Good Morning' : hour < 17 ? 'Good Afternoon' : 'Good Evening';
 
     return RefreshIndicator(
       onRefresh: () async => ref.refresh(dashboardProvider.future),
